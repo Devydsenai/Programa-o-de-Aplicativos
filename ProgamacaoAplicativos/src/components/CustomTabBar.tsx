@@ -5,11 +5,11 @@ import { Azul2, Branco } from '../core/cores';
 import { UserContext } from '../contexts/UserContext';
 
 
-import HomeIcon from '../assets/home.svg';
-import SearchIcon from '../assets/search.svg';
-import AppointmentsIcon from '../assets/today.svg';
-import FavoritesIcon from '../assets/favorite.svg';
-import AccountIcon from '../assets/account.svg';
+// import HomeIcon from '../assets/home.svg';
+// import SearchIcon from '../assets/search.svg';
+// import AppointmentsIcon from '../assets/today.svg';
+// import FavoritesIcon from '../assets/favorite.svg';
+// import AccountIcon from '../assets/account.svg';
 
 const TabArea = styled.View`
     height: 60px;
@@ -38,6 +38,11 @@ const AvatarIcon = styled.Image`
     border-radius: 12px;
 `;
 
+const TabText = styled.Text`
+    font-size: 20px;
+    color: ${Branco};
+`;
+
 
 export default ({state, navigation}: {state: any, navigation: any}) => {
     const userContext = useContext(UserContext) as any;
@@ -49,19 +54,19 @@ export default ({state, navigation}: {state: any, navigation: any}) => {
     return (
         <TabArea>
             <TabItem onPress={() => goTo('Home')}>
-                <HomeIcon width="24" height="24" fill={state.index === 0 ? Branco : Azul2} />
+                <TabText>🏠</TabText>
             </TabItem>
             <TabItem onPress={() => goTo('Search')}>
-                <SearchIcon width="24" height="24" fill={state.index === 1 ? Branco : Azul2} />
+                <TabText>🔍</TabText>
             </TabItem>
             <TabItem onPress={() => goTo('Appointments')}>
-                <AppointmentsIcon width="24" height="24" fill={state.index === 2 ? Branco : Azul2} />
+                <TabText>📅</TabText>
             </TabItem>
             <TabItem onPress={() => goTo('Favorites')}>
-                <FavoritesIcon width="24" height="24" fill={state.index === 3 ? Branco : Azul2} />
+                <TabText>❤️</TabText>
             </TabItem>
             <TabItem onPress={() => goTo('Profile')}>
-                <AccountIcon width="24" height="24" fill={state.index === 4 ? Branco : Azul2} />
+                <TabText>👤</TabText>
             </TabItem>
 
         </TabArea>

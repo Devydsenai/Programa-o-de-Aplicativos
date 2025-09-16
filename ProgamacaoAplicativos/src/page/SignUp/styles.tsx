@@ -1,15 +1,48 @@
-import React from "react";
-import styled from "styled-components/native";
-import { azulVidro, Branco  } from '../../core/cores';
+import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
+    background-color: #63C2D1;
     flex: 1;
-    background-color: ${azulVidro };
+    justify-content: center;
+    align-items: center;
 `;
 
-export const HeaderTitle = styled.Text`
-    width: 250px;
-    font-size: 24px;
+export const InputArea = styled.View`
+    width: 100%;
+    padding: 40px;
+`;
+
+export const CustomButton = styled.TouchableOpacity`
+    width: 200px;
+    height: 60px;
+    background-color: #268596;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    align-self: center;
+`;
+
+export const CustomButtonText = styled.Text`
+    font-size: 18px;
+    color: #FFF;
+`;
+
+export const SignMessageButton = styled.TouchableOpacity`
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+`;
+
+export const SignMessageButtonText = styled.Text`
+    font-size: 16px;
+    color: #268596;
+`;
+
+export const SignMessageButtonTextBold = styled.Text`
+    font-size: 16px;
+    color: #268596;
     font-weight: bold;
-    color: ${Branco};
+    margin-left: 5px;
 `;

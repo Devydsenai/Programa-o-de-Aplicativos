@@ -1,5 +1,7 @@
+export const Azul4 = "#83D6E3";
+export const Azul3 = "#268596";
 export const Azul2 = "#4EADBE"
-export const Azul = "#2196F3";
+export const Azul1 = "#2196F3";
 export const Verde = "#4CAF50";
 export const Vermelho = "#F44336";
 export const Amarelo = "#FFEB3B";
@@ -66,6 +68,7 @@ export const douradoClaro = "#FFF176";
 export const douradoEscuro = "#FF8F00";
 export const prataClaro = "#E0E0E0";
 export const prataEscuro = "#757575";
+export const PrataClaro2 = "#737373"
 export const bronzeClaro = "#D7CCC8";
 export const bronzeEscuro = "#4E342E";
 export const sombra = "rgba(0, 0, 0, 0.2)";

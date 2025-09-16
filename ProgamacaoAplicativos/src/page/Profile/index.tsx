@@ -6,7 +6,7 @@ import { Container, HeaderTitle } from './styles';
 export default () => {
     return (
         <Container>
-            <HeaderTitle>Search</HeaderTitle>
+            <HeaderTitle>Profile</HeaderTitle>
         </Container>
     );
 }
